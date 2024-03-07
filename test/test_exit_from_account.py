@@ -9,5 +9,3 @@ class TestExitFromAccount:
         driver.find_element(*My_locators.PERSONAL_ACCOUNT_BUTTON).click()
         WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(My_locators.EXIT_BUTTON_ACCOUNT)).click()
         assert WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(My_locators.SIGN_IN_BUTTON_AUTH))
-
-        driver.quit()

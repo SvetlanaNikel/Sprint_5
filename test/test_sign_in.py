@@ -40,4 +40,3 @@ class TestSignIn:
         driver.find_element(*My_locators.SIGN_IN_BUTTON_AUTH).click()
         assert WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(My_locators.MAKE_AN_ORDER_BUTTON))
 
-        driver.quit()

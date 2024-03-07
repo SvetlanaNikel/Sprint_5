@@ -19,4 +19,3 @@ class TestSectionsInConstructor:
         driver.find_element(*My_locators.FILLINGS_TAB).click
         assert WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(My_locators.FILLINGS_HEADER))
 
-        driver.quit()

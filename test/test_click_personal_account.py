@@ -14,4 +14,3 @@ class TestClickPersonalAccount:
         driver.find_element(*My_locators.PERSONAL_ACCOUNT_BUTTON).click()
         assert WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(My_locators.HISTORY_OF_ORDERS_URL))
 
-        driver.quit()

@@ -15,4 +15,3 @@ class TestFromPersonalAccountInConstructor:
         driver.find_element(*My_locators.LOGO_HEADER).click()
         assert WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(My_locators.COLLECT_BURGER_HEADER))
 
-        driver.quit()

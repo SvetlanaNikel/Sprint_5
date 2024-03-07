@@ -25,4 +25,3 @@ class TestRegistration:
         driver.find_element(*My_locators.REGISTRATION_BUTTON_REG).click()
         assert driver.find_element(*My_locators.INCORRECT_PASSWORD_ERROR_REG)
 
-        driver.quit()
